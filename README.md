@@ -1,16 +1,37 @@
-# React + Vite
+# 🗺️ Construyendo un mapa con MapLibre GL JS + React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> En este tutorial vamos a crear desde cero una pequeña aplicación web capaz de mostrar un mapa interactivo utilizando **React** y **MapLibre GL JS**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Características del Proyecto
 
-## React Compiler
+- **Mapa Interactivo:** Renderizado dinámico y optimizado a pantalla completa.
+- **OpenStreetMap Integration:** Uso de capas base *Raster* ligeras y de acceso libre.
+- **Arquitectura Escalable:** Gestión de estado global de la instancia (`mapRef`) a través de **Context API**.
+- **Gestión de Estado Reactivo:** Notificación y control del estado de carga (`isMapReady`) para prevenir errores de ejecución en frío.
+- **Custom Hooks:** Encapsulamiento de la lógica del mapa en `useMap` para evitar la propagación innecesaria de *props* (*prop drilling*).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tecnologías Utilizadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+- ![MapLibre](https://img.shields.io/badge/MapLibre_GL-3388ff?style=for-the-badge&logo=maplibre&logoColor=white)
+- ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+- ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+
+---
+
+## 📁 Estructura del Proyecto
+
+```text
+src/
+├── components/
+│   └── MainMap.jsx       # Contenedor del lienzo del mapa
+├── context/
+│   └── MapContext.jsx    # Contexto global para la instancia y estados
+├── hooks/
+│   └── useMap.js         # Custom Hook con el ciclo de vida de MapLibre
+├── App.jsx               # Integración de Provider y componentes
+└── index.css             # Resets críticos para el contenedor fullscreen
