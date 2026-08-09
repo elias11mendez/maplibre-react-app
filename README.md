@@ -35,3 +35,41 @@ src/
 │   └── useMap.js         # Custom Hook con el ciclo de vida de MapLibre
 ├── App.jsx               # Integración de Provider y componentes
 └── index.css             # Resets críticos para el contenedor fullscreen
+```
+
+---
+
+## ⚙️ Instalación y Configuración
+
+1. **Clonar el repositorio:**
+   ```bash
+   git clone [https://github.com/elias11mendez/maplibre-react-app.git](https://github.com/elias11mendez/maplibre-react-app.git)
+   cd maplibre-react-app
+   ```
+
+2. **Instalar dependencias:**
+   ```bash
+   npm install
+   # o si usas pnpm
+   pnpm install
+   ```
+
+3. **Iniciar el servidor de desarrollo:**
+   ```bash
+   npm run dev
+   # o con pnpm
+   pnpm dev
+   ```
+
+---
+
+## 👨‍💻 Autor
+
+Desarrollado por **Elias Mendez** (EliasGeoDev).
+
+- 🌐 **Sitio Web:** [eliasgeodev.sinekasur.site](https://eliasgeodev.sinekasur.site)
+- 💼 **LinkedIn:** [eliasgeodev](https://www.linkedin.com/in/eliasgeodev)
+
+---
+
+⭐ *Si este tutorial o repositorio te fue útil, ¡no dudes en darle una estrella!*
