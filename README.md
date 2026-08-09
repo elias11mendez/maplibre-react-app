@@ -65,7 +65,7 @@ src/
 
 ## 👨‍💻 Autor
 
-Desarrollado por **Elias Mendez** (EliasGeoDev).
+Desarrollado por **Elías Josué Méndez Arcos** (en google xd).
 
 - 🌐 **Sitio Web:** [eliasgeodev.sinekasur.site](https://eliasgeodev.sinekasur.site)
 - 💼 **LinkedIn:** [eliasgeodev](https://www.linkedin.com/in/eliasgeodev)
